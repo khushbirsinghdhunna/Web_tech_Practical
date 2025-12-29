@@ -1,0 +1,10 @@
+body {
+    background-color: lightyellow;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: green;
+    font-size: 18px;
+    text-align: center;
+}

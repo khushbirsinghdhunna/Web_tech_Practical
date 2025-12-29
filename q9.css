@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: lightblue;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.box {
+    background: lightgray;
+    padding: 2em;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+/* Larger screens */
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .box {
+        flex: 1;
+    }
+}

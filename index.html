@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushbir's Web Portfolio</title>
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --accent-color: #00d2ff;
+            --text-color: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Vibrant background gradient */
+            background: radial-gradient(circle at top left, #1a2a6c, #b21f1f, #fdbb2d);
+            background-attachment: fixed;
+            min-height: 100vh;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--text-color);
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-weight: 300;
+            opacity: 0.9;
+            font-size: 1.2rem;
+        }
+
+        /* The Grid Container */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* Frosted Glass Button Styling */
+        .glass-btn {
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px); /* The Frost Effect */
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 30px 20px;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Hover Animation */
+        .glass-btn:hover {
+            transform: translateY(-10px) scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+            border-color: var(--accent-color);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        /* Click Effect */
+        .glass-btn:active {
+            transform: scale(0.95);
+            background: rgba(0, 210, 255, 0.3);
+        }
+
+        .btn-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .btn-desc {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.7;
+        }
+
+        /* Glowing effect on hover */
+        .glass-btn::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .glass-btn:hover::after {
+            opacity: 1;
+        }
+
+        footer {
+            margin-top: auto;
+            padding-top: 60px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Assignment Hub</h1>
+        <p class="subtitle">RU-25-10674 | Web Technology Portfolio</p>
+    </header>
+
+    <div class="grid">
+        <a href="q1_khushbir.html" class="glass-btn">
+            <span class="btn-title">Q1</span>
+            <span class="btn-desc">Launch Page</span>
+        </a>
+        <a href="q2_khushbir.html" class="glass-btn">
+            <span class="btn-title">Q2</span>
+            <span class="btn-desc">Launch Page</span>
+        </a>
+        <a href="q3_khushbir.html" class="glass-btn">
+            <span class="btn-title">Q3</span>
+            <span class="btn-desc">Launch Page</span>
+        </a>
+        <a href="q4_khushbir.html" class="glass-btn">
+            <span class="btn-title">Q4</span>
+            <span class="btn-desc">Launch Page</span>
+        </a>
+        <a href="q5_khushbir.html" class="glass-btn">
+            <span class="btn-title">Q5</span>
+            <span class="btn-desc">Launch Page</span>
+        </a>
+        <a href="q6_khushbir.html" class="glass-btn">
+            <span class="btn-title">Q6</span>
+            <span class="btn-desc">Launch Page</span>
+        </a>
+        <a href="q7_khushbir.html" class="glass-btn">
+            <span class="btn-title">Q7</span>
+            <span class="btn-desc">Launch Page</span>
+        </a>
+        <a href="q8_khushbir.html" class="glass-btn">
+            <span class="btn-title">Q8</span>
+            <span class="btn-desc">Launch Page</span>
+        </a>
+        <a href="q9_khushbir.html" class="glass-btn">
+            <span class="btn-title">Q9</span>
+            <span class="btn-desc">Launch Page</span>
+        </a>
+        <a href="q10_khushbir.html" class="glass-btn">
+            <span class="btn-title">Q10</span>
+            <span class="btn-desc">Launch Page</span>
+        </a>
+        <a href="q11.html" class="glass-btn">
+            <span class="btn-title">Q11</span>
+            <span class="btn-desc">Launch Page</span>
+        </a>
+        <a href="q12.html" class="glass-btn">
+            <span class="btn-title">Q12</span>
+            <span class="btn-desc">Launch Page</span>
+        </a>
+        <a href="q13.html" class="glass-btn">
+            <span class="btn-title">Q13</span>
+            <span class="btn-desc">Launch Page</span>
+        </a>
+        <a href="q14.html" class="glass-btn">
+            <span class="btn-title">Q14</span>
+            <span class="btn-desc">Launch Page</span>
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2024 Created by Khushbir. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+        * {
+            font-family: Arial;
+        }
+
+        #title {
+            color: blue;
+            text-align: center;
+        }
+
+        .info {
+            color: green;
+        }
+
+        div p {
+            color: purple;
+        }
+
+        h1,
+        h2 {
+            border-bottom: 2px solid black;
+        }
